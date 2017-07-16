@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.acyonix.musicalstructure.MenuActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/menu_activity_textview"
+        style="@style/view_style"
+        android:text="@string/menu_activity_description" />
+
+    <Button
+        android:id="@+id/all_songs_button"
+        style="@style/view_style"
+        android:text="@string/all_songs_button_tag"/>
+
+    <Button
+        android:id="@+id/artists_button"
+        style="@style/view_style"
+        android:text="@string/artists_button_tag"/>
+
+    <Button
+        android:id="@+id/album_button"
+        style="@style/view_style"
+        android:text="@string/album_button_tag"/>
+
+
+
+</LinearLayout>
