@@ -9,9 +9,8 @@
 
     <Button
         android:id="@+id/view_all_songs_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/holo_blue_bright"
+        style="@style/adjustable_dim_view"
+        android:text="@string/all_songs_button_label"
         app:layout_constraintBottom_toTopOf="@+id/play_music_activity_textview"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintHorizontal_weight="1"
@@ -19,64 +18,57 @@
         app:layout_constraintRight_toLeftOf="@+id/equalizer_button"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread_inside"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@id/equalizer_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/holo_orange_dark"
+        style="@style/adjustable_dim_view"
+        android:text="@string/equalizer_button_label"
         app:layout_constraintBottom_toBottomOf="@id/view_all_songs_button"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintLeft_toRightOf="@id/view_all_songs_button"
         app:layout_constraintRight_toLeftOf="@+id/settings_button"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@id/settings_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/holo_red_dark"
+        style="@style/adjustable_dim_view"
+        android:text="@string/setting_button_label"
         app:layout_constraintBottom_toBottomOf="@id/view_all_songs_button"
         app:layout_constraintHorizontal_weight="1"
         app:layout_constraintLeft_toRightOf="@id/equalizer_button"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@id/play_music_activity_textview"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/holo_purple"
+        style="@style/adjustable_dim_view"
+        android:gravity="center"
         android:text="@string/play_music_activity_description"
         app:layout_constraintBottom_toTopOf="@+id/control_song_buttons"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view_all_songs_button"
-        app:layout_constraintVertical_weight="4"/>
+        app:layout_constraintVertical_weight="4" />
 
     <Button
         android:id="@id/control_song_buttons"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/holo_blue_dark"
+        style="@style/adjustable_dim_view"
         android:text="@string/control_music_bar_description"
         app:layout_constraintBottom_toTopOf="@+id/view_playlist_button"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/play_music_activity_textview"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@id/view_playlist_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@android:color/holo_green_dark"
+        style="@style/adjustable_dim_view"
         android:text="@string/playlist_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/control_song_buttons"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintVertical_weight="1" />
 
 </android.support.constraint.ConstraintLayout>

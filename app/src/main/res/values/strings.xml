@@ -12,7 +12,7 @@
     <string name="song_1_tag">Song 1</string>
     <string name="song_2_tag">Song 2</string>
     <string name="play_music_activity_description">This view is the actual music player activity for
-    the app. Here you can play, pause, access settings, change songs etc.</string>
+    the app. You can control the current song, access settings and equalizer etc.</string>
     <string name="playlist_button">Playlist</string>
     <string name="setting_1_tag">Setting 1</string>
     <string name="setting_2_tag">Setting 2</string>
@@ -21,4 +21,7 @@
     settings.</string>
     <string name="control_music_bar_description">Here you can play, pause, fast-forward, rewind and
     change song.</string>
+    <string name="setting_button_label">Settings</string>
+    <string name="all_songs_button_label">All Songs</string>
+    <string name="equalizer_button_label">Equalizer</string>
 </resources>
