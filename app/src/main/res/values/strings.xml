@@ -19,4 +19,6 @@
     <string name="setting_3_tag">Setting 3</string>
     <string name="setting_activity_description">This view allows the user to change the app\'s
     settings.</string>
+    <string name="control_music_bar_description">Here you can play, pause, fast-forward, rewind and
+    change song.</string>
 </resources>
