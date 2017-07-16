@@ -11,17 +11,17 @@
         android:id="@+id/view_all_songs_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/play_music_activity_textview"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintVertical_chainStyle="spread_inside"
         app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintVertical_weight="1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/equalizer_button"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread_inside"
-        app:layout_constraintVertical_weight="1"/>
+        app:layout_constraintBottom_toTopOf="@+id/play_music_activity_textview"/>
 
     <Button
-        android:id="@id/equalizer_button"
+        android:id="@+id/equalizer_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@id/view_all_songs_button"
@@ -31,17 +31,17 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
-        android:id="@id/settings_button"
+        android:id="@+id/settings_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@id/view_all_songs_button"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintLeft_toRightOf="@id/equalizer_button"
+        app:layout_constraintLeft_toRightOf="@+id/equalizer_button"
         app:layout_constraintRight_toLeftOf="@id/view_all_songs_button"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@id/play_music_activity_textview"
+        android:id="@+id/play_music_activity_textview"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/play_music_activity_description"
@@ -51,52 +51,18 @@
         app:layout_constraintVertical_weight="4" />
 
     <Button
-        android:id="@+id/previous_song_button"
+        android:id="@+id/control_song_buttons"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintVertical_weight="1"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/fast_rewind_button"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="play_music_activity_textview"
         app:layout_constraintBottom_toTopOf="@+id/view_playlist_button"
         android:background="@drawable/previous" />
 
     <Button
-        android:id="@+id/fast_rewind_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/fast_rewind" />
-
-    <Button
-        android:id="@+id/play_pause_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/play"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="8dp" />
-
-    <Button
-        android:id="@+id/fast_forward_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/fast_forward"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="8dp" />
-
-    <Button
-        android:id="@+id/next_song_button"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="@drawable/next"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="8dp" />
-
-    <Button
-        android:id="@id/view_playlist_button"
+        android:id="@+id/view_playlist_button"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/playlist_button"
