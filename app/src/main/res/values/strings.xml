@@ -1,27 +1,55 @@
 <resources>
     <string name="app_name">Musical Structure</string>
-    <string name="menu_activity_label">Menu Activity</string>
-    <string name="menu_activity_description">This screen displays a menu of the lists that can show
-    their music. Items that could be shown here are \"All Songs\", \"Playlists\", \"Albums\" and
-    similar.</string>
+    <string name="menu_activity_description">
+        This screen displays a menu of the lists that can show their music. Items that could be
+        shown here are \"All Songs\", \"Playlists\", \"Albums\" and similar.
+    </string>
     <string name="album_button_tag">Albums</string>
     <string name="all_songs_button_tag">All Songs</string>
     <string name="artists_button_tag">Artists</string>
-    <string name="show_music_activity_description">This screen displays a list of the users songs,
-    shown based on what the user chose in the menu screen</string>
+    <string name="show_music_activity_description">
+        This screen displays a list of the users songs, shown based on what the user chose in the
+        menu screen.
+    </string>
     <string name="song_1_tag">Song 1</string>
     <string name="song_2_tag">Song 2</string>
-    <string name="play_music_activity_description">This view is the actual music player activity for
-    the app. You can control the current song, access settings and equalizer etc.</string>
+    <string name="play_music_activity_description">
+        This view is the actual music player activity for the app. You can control the current song,
+        access settings and equalizer etc.
+    </string>
     <string name="playlist_button">Playlist</string>
     <string name="setting_1_tag">Setting 1</string>
     <string name="setting_2_tag">Setting 2</string>
     <string name="setting_3_tag">Setting 3</string>
-    <string name="setting_activity_description">This view allows the user to change the app\'s
-    settings.</string>
-    <string name="control_music_bar_description">Here you can play, pause, fast-forward, rewind and
-    change song.</string>
+    <string name="setting_activity_description">
+        This view allows the user to change the app\'s settings.
+    </string>
+    <string name="control_music_bar_description">
+        Here you can play, pause, fast-forward, rewind and change song.
+    </string>
     <string name="setting_button_label">Settings</string>
     <string name="all_songs_button_label">All Songs</string>
     <string name="equalizer_button_label">Equalizer</string>
+    <string name="shop_activity_description">
+        This view is for buying new music. Songs are
+        listed for the user to buy. This can also be used as a store launch screen. This screen does
+        not lead anywhere in the app.
+    </string>
+    <string name="buy_music_activity_label">Buy Music</string>
+    <string name="play_music_activity_label">Play Music</string>
+    <string name="settings_activity_label">Settings</string>
+    <string name="show_music_activity_label">All Music / Playlist</string>
+    <string name="shop_button">Buy Music</string>
+    <string name="payment_activity_description">
+        This screen is for buying a song. A possible API to use for validating and conducting the
+        payment is <a href="https://stripe.com/docs/mobile/android">Stripe</a>. Stripe is a complete
+        payment system where the app owner creates and sets up an account and web server, and
+        integrates that with this app. To set it up there is documentation on the Stripe website, as
+        well as support in case the app developer needs it. How it\'s used is that first the user
+        enters their credit card details and the app creates a secure token which is then used to
+        charge the user. Widgets such as an EditText or even Stripe\'s own CardInputWidget can be
+        used to collect the card information.
+    </string>
+    <string name="paid_button_label">Paid</string>
+    <string name="payment_activity_label">Payment</string>
 </resources>

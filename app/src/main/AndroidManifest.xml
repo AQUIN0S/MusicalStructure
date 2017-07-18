@@ -4,24 +4,66 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:label="@string/app_name">
         <activity
             android:name=".MenuActivity"
-            android:label="@string/menu_activity_label">
-        </activity>
-        <activity android:name=".ShowMusicActivity" />
-        <activity android:name=".PlayMusicActivity">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".BuyMusicActivity" />
+        <activity
+            android:name=".ShowMusicActivity"
+            android:label="@string/show_music_activity_label"
+            android:parentActivityName=".MenuActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.acyonix.musicalstructure.MenuActivity" />
+        </activity>
+        <activity
+            android:name=".PlayMusicActivity"
+            android:label="@string/play_music_activity_label"
+            android:parentActivityName=".ShowMusicActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.acyonix.musicalstructure.ShowMusicActivity" />
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/settings_activity_label"
+            android:parentActivityName=".PlayMusicActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.acyonix.musicalstructure.PlayMusicActivity" />
+        </activity>
+        <activity
+            android:name=".ShopActivity"
+            android:label="@string/buy_music_activity_label"
+            android:parentActivityName=".MenuActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.acyonix.musicalstructure.MenuActivity" />
+        </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:label="@string/payment_activity_label"
+            android:parentActivityName=".ShopActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.acyonix.musicalstructure.ShopActivity" />
+        </activity>
     </application>
 
 </manifest>

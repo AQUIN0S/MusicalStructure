@@ -26,6 +26,9 @@
         style="@style/view_style"
         android:text="@string/album_button_tag"/>
 
-
+    <Button
+        android:id="@+id/shop_button"
+        style="@style/view_style"
+        android:text="@string/shop_button"/>
 
 </LinearLayout>

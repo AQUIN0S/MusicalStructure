@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.acyonix.musicalstructure.ShopActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/shop_activity_description"
+        style="@style/view_style"/>
+
+    <Button
+        android:id="@+id/buy_song_1_button"
+        style="@style/view_style"
+        android:text="@string/song_1_tag"/>
+
+    <Button
+        android:id="@+id/buy_song_2_button"
+        style="@style/view_style"
+        android:text="@string/song_2_tag"/>
+
+</LinearLayout>
