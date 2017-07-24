@@ -48,7 +48,7 @@
         </activity>
         <activity
             android:name=".ShopActivity"
-            android:label="@string/buy_music_activity_label"
+            android:label="@string/shop_activity_label"
             android:parentActivityName=".MenuActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data

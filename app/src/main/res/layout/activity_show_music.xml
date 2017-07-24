@@ -7,6 +7,12 @@
     tools:context="com.acyonix.musicalstructure.ShowMusicActivity">
 
     <TextView
+        style="@style/activity_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/show_music_activity_label"/>
+
+    <TextView
         android:id="@+id/show_music_activity_textbox"
         style="@style/view_style"
         android:text="@string/show_music_activity_description"/>

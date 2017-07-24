@@ -13,6 +13,15 @@ public class ShopActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
 
+        Button goHomeButton = (Button) findViewById(R.id.shop_home_button);
+        goHomeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openMenuActivity = new Intent(ShopActivity.this, MenuActivity.class);
+                startActivity(openMenuActivity);
+            }
+        });
+
         Button buyFirstSongButton = (Button) findViewById(R.id.buy_song_1_button);
         buyFirstSongButton.setOnClickListener(new View.OnClickListener() {
             @Override
