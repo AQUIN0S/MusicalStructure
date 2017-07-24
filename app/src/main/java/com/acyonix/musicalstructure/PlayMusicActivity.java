@@ -23,6 +23,16 @@ public class PlayMusicActivity extends AppCompatActivity {
             }
         });
 
+        Button menuButton = (Button) findViewById(R.id.menu_button);
+        menuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openMenuActivity = new Intent(PlayMusicActivity.this,
+                        MenuActivity.class);
+                startActivity(openMenuActivity);
+            }
+        });
+
         Button settingsButton = (Button) findViewById(R.id.settings_button);
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override

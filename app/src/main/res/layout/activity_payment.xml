@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     tools:context="com.acyonix.musicalstructure.PaymentActivity"
     android:orientation="vertical">
+
+    <TextView
+        style="@style/activity_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_activity_label"/>
     
     <TextView
         android:id="@+id/payment_textview"

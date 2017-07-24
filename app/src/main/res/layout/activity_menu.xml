@@ -7,6 +7,12 @@
     android:orientation="vertical">
 
     <TextView
+        style="@style/activity_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_activity_label"/>
+
+    <TextView
         android:id="@+id/menu_activity_textview"
         style="@style/view_style"
         android:text="@string/menu_activity_description" />
