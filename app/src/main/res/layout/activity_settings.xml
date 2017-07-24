@@ -12,13 +12,13 @@
         android:layout_height="wrap_content"
         android:text="@string/settings_activity_label"/>
 
-    <Button
-        android:id="@+id/settings_home_button"
-        style="@style/home_button_style" />
-
     <TextView
         android:text="@string/setting_activity_description"
         style="@style/view_style"/>
+
+    <Button
+        android:id="@+id/settings_home_button"
+        style="@style/home_button_style" />
 
     <Button
         style="@style/view_style"

@@ -12,13 +12,13 @@
         android:layout_height="wrap_content"
         android:text="@string/shop_activity_label"/>
 
-    <Button
-        android:id="@+id/shop_home_button"
-        style="@style/home_button_style" />
-
     <TextView
         android:text="@string/shop_activity_description"
         style="@style/view_style"/>
+
+    <Button
+        android:id="@+id/shop_home_button"
+        style="@style/home_button_style" />
 
     <Button
         android:id="@+id/buy_song_1_button"
